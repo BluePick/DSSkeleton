@@ -1,5 +1,6 @@
 # DSSkeleton
 
+#### A simple & Easy skeleton Loading extension
 
 ### HOW TO USE?
 ---
