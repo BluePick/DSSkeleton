@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="animationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="animationViewController" customModule="DSSkeleton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9t-9s-RVd">
+                                <rect key="frame" x="10" y="226" width="355" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="RqA-il-yQj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3V8-UQ-HTx">
+                                <rect key="frame" x="10" y="274" width="355" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="oau-2n-P7h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4b-Dl-vVn">
+                                <rect key="frame" x="112" y="40" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="GmZ-Ru-hg2"/>
+                                    <constraint firstAttribute="width" constant="150" id="toN-Iq-9MG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-qH-cc6">
+                                <rect key="frame" x="10" y="382" width="355" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="i4U-tn-5ff"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pd2-qH-cc6" secondAttribute="trailing" constant="10" id="24X-IA-2Oo"/>
+                            <constraint firstItem="o4b-Dl-vVn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9uk-n4-oEz"/>
+                            <constraint firstItem="Pd2-qH-cc6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="GtI-Pg-8ns"/>
+                            <constraint firstItem="3V8-UQ-HTx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Lgz-WP-ztR"/>
+                            <constraint firstAttribute="trailing" secondItem="3V8-UQ-HTx" secondAttribute="trailing" constant="10" id="WaY-NX-c6h"/>
+                            <constraint firstItem="R9t-9s-RVd" firstAttribute="top" secondItem="o4b-Dl-vVn" secondAttribute="bottom" constant="36" id="bZY-qt-mpJ"/>
+                            <constraint firstItem="R9t-9s-RVd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gkS-Hd-yqL"/>
+                            <constraint firstItem="o4b-Dl-vVn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hDv-AO-Vv2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R9t-9s-RVd" secondAttribute="trailing" constant="10" id="nHf-kP-vL3"/>
+                            <constraint firstItem="Pd2-qH-cc6" firstAttribute="top" secondItem="3V8-UQ-HTx" secondAttribute="bottom" constant="8" id="p8b-OB-g5S"/>
+                            <constraint firstItem="R9t-9s-RVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="whI-pr-2ME"/>
+                            <constraint firstItem="3V8-UQ-HTx" firstAttribute="top" secondItem="R9t-9s-RVd" secondAttribute="bottom" constant="25" id="yWJ-Wb-sKu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgProfile" destination="o4b-Dl-vVn" id="N2G-xc-GOs"/>
+                        <outlet property="lblAuthor" destination="Pd2-qH-cc6" id="Yl5-Zc-1OT"/>
+                        <outlet property="lblName" destination="R9t-9s-RVd" id="ZiF-11-21L"/>
+                        <outlet property="lblQoute" destination="3V8-UQ-HTx" id="64K-AI-9nP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="70"/>
+        </scene>
+    </scenes>
+</document>
