@@ -13,6 +13,7 @@
 		A9BD003F212EAB23004A0614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BD003E212EAB23004A0614 /* Assets.xcassets */; };
 		A9BD0042212EAB23004A0614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BD0040212EAB23004A0614 /* LaunchScreen.storyboard */; };
 		A9BD004C212EB071004A0614 /* jhonDoe.png in Resources */ = {isa = PBXBuildFile; fileRef = A9BD004B212EB071004A0614 /* jhonDoe.png */; };
+		A9BD0050212EDC31004A0614 /* UIViewSkeletonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD004F212EDC31004A0614 /* UIViewSkeletonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A9BD0041212EAB23004A0614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9BD0043212EAB23004A0614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9BD004B212EB071004A0614 /* jhonDoe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jhonDoe.png; sourceTree = "<group>"; };
+		A9BD004F212EDC31004A0614 /* UIViewSkeletonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSkeletonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A9BD0037212EAB1E004A0614 /* AppDelegate.swift */,
 				A9BD0039212EAB1E004A0614 /* animationViewController.swift */,
 				A9BD003B212EAB1E004A0614 /* Main.storyboard */,
+				A9BD004F212EDC31004A0614 /* UIViewSkeletonExtension.swift */,
 				A9BD003E212EAB23004A0614 /* Assets.xcassets */,
 				A9BD004B212EB071004A0614 /* jhonDoe.png */,
 				A9BD0040212EAB23004A0614 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BD0050212EDC31004A0614 /* UIViewSkeletonExtension.swift in Sources */,
 				A9BD003A212EAB1E004A0614 /* animationViewController.swift in Sources */,
 				A9BD0038212EAB1E004A0614 /* AppDelegate.swift in Sources */,
 			);
@@ -291,7 +295,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.indianic.DSSkeleton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darshit.DSSkeleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -310,7 +314,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.indianic.DSSkeleton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darshit.DSSkeleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

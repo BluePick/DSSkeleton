@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  DSSkeleton
-//
-//  Created by indianic on 23/08/18.
-//  Copyright © 2018 indianic. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
