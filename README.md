@@ -14,3 +14,6 @@ imgProfile.startDSLoading()
 //STOP LOADING
 imgProfile.stopDSLoading()
 ```
+
+### Preview
+![](https://github.com/BluePick/DSSkeleton/blob/master/DSSkeleton.gif)
