@@ -48,6 +48,17 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCL-nk-I22">
+                                <rect key="frame" x="130" y="603" width="115" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="ikI-eZ-bXj"/>
+                                    <constraint firstAttribute="height" constant="30" id="pRr-aY-dd9"/>
+                                </constraints>
+                                <state key="normal" title="STOP LOADING"/>
+                                <connections>
+                                    <action selector="loadingClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtN-tx-6Lr"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-qH-cc6">
                                 <rect key="frame" x="10" y="382" width="355" height="23"/>
                                 <constraints>
@@ -69,9 +80,11 @@
                             <constraint firstItem="R9t-9s-RVd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gkS-Hd-yqL"/>
                             <constraint firstItem="o4b-Dl-vVn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hDv-AO-Vv2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R9t-9s-RVd" secondAttribute="trailing" constant="10" id="nHf-kP-vL3"/>
+                            <constraint firstItem="sCL-nk-I22" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nNR-QI-0Kj"/>
                             <constraint firstItem="Pd2-qH-cc6" firstAttribute="top" secondItem="3V8-UQ-HTx" secondAttribute="bottom" constant="8" id="p8b-OB-g5S"/>
                             <constraint firstItem="R9t-9s-RVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="whI-pr-2ME"/>
                             <constraint firstItem="3V8-UQ-HTx" firstAttribute="top" secondItem="R9t-9s-RVd" secondAttribute="bottom" constant="25" id="yWJ-Wb-sKu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sCL-nk-I22" secondAttribute="bottom" constant="34" id="z9H-dq-1Tu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

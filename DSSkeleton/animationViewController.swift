@@ -18,12 +18,10 @@ class animationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imgProfile.startDSLoading()
-        lblName.startDSLoading()
-        lblQoute.startDSLoading()
-        lblAuthor.startDSLoading()
         
-        self.perform(#selector(animationViewController.loadData), with: nil, afterDelay: 2.0)
+        startViewAnimation()
+        
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +29,15 @@ class animationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func loadData() {
+    
+    func startViewAnimation()  {
+        imgProfile.startDSLoading()
+        lblName.startDSLoading()
+        lblQoute.startDSLoading()
+        lblAuthor.startDSLoading()
+    }
+    
+    @objc func stopViewAnimation() {
         imgProfile.image = #imageLiteral(resourceName: "jhonDoe.png")
         imgProfile.stopDSLoading()
 
@@ -44,6 +50,21 @@ class animationViewController: UIViewController {
         lblAuthor.text = "- Maya Angelou"
         lblAuthor.stopDSLoading()
     }
+    
+    
+    @IBAction func loadingClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        sender.setTitle(sender.isSelected ? "START LOADING" : "STOP LOADING" , for: .normal)
+        if sender.isSelected {
+            stopViewAnimation()
+        }
+        else{
+            startViewAnimation()
+        }
+        
+    }
+    
+    
     
 }
 
